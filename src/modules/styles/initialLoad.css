@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+}
+
+#content {
+  display: grid;
+  grid-template-rows:  20vh 60vh 20vh;
+
+  header {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  main {
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    #playersBoardContainer, #computersBoardContainer {
+      padding: 4rem;
+    }
+
+    #playersBoard, #computersBoard {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      border: 2px solid black;
+
+      .cell {
+        grid-row: span 1;
+        grid-column: span 1;
+        border: 2px solid black;
+      }
+
+      .cell:hover {
+        scale: 1.2;
+      }
+    }
+
+    #computersBoard .cell {
+      background-color: white;
+    }
+
+  }
+
+  footer {
+    grid-row: 3 / 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      margin-left: 1rem;
+      padding: .25rem;
+      font-weight: bold;
+      outline: none;
+      border: 2px solid #25a9c0;
+      border-radius: 8px;
+    }
+
+    button:hover {
+      scale: 1.2;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+div.cell.Destroyer {
+    background-color: red;
+}
+
+.Submarine {
+    background-color: aqua;
+}
+
+.Cruiser {
+    background-color: blueviolet;
+}
+
+.Battleship {
+    background-color: royalblue;
+}
+
+.Carrier {
+    background-color: greenyellow;
+}
