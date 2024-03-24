@@ -72,7 +72,7 @@ function gameLoop() {
 
 // Start the game loop
 
-header.textContent = 'When the game starts you have only 3 seconds to make the move otherwise the computer automtically make his move. So be quick!'
+header.textContent = 'When the Game starts you have only 3 seconds to make the move otherwise the computer automtically make his move. So be quick!'
 
 const startBtn = document.getElementById('start');
 
